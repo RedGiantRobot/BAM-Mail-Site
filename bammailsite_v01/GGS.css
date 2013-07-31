@@ -199,6 +199,11 @@ body {
   font-size: 6.875em;
   line-height: 1.0909090909090908em;
 }
+
+section {
+	border: solid 2px blue;
+}
+
 /*
 *
 *  Four-column grid active
@@ -210,6 +215,24 @@ body {
 header, #twoway {
   margin: 0 5.555555555555555%;
 }
+
+.wrapper img{
+	width:100%;	
+}
+
+ #logo {
+    /*float: left;*/
+    /*width: 50%;*/
+	border:solid green 5px;
+  }
+    
+  header {
+	  border:solid red 2px;
+	  /*margin: 0 50%/*16.666666666666664%;*/
+	/*  margin-right:87.5%*/
+	/*  width:37.5%;*/
+  }
+
 h1, h2 {
   margin: 0.9230769230769231em 0 1.3846153846153846em;
 }
@@ -278,9 +301,37 @@ h3 {
   
     font-size: 1em;
   }
-  #twoway .wrapper {
+  
+  header {
+    margin-left:  5.5%;
+	/*margin-right: 87.5%;*/
+	width:44.455555555%;
+  }
+  
+ /* #twoway .wrapper {
     float: left;
     width: 50%;
+  }*/
+  
+   #logo {
+    /*float: left;*/
+    width: 100%;
+	/*border:solid yellow 5px;*/
+  }
+  
+  
+   #logo {
+    /*float: left;*/
+    /*width: 50%;*/
+	/*border:solid yellow 5px;*/
+  }
+ 
+  	
+  header {
+	  border:solid red 2px;
+	  /*margin: 0 50%/*16.666666666666664%;*/
+	 /* margin-right:87.5%*/
+	
   }
 }
 /* @media screen and (min-width: 888px) */
@@ -298,8 +349,13 @@ h3 {
   
     font-size: 1em;
   }
-  header, #twoway {
+  #twoway {
     margin: 0 16.666666666666664%;
+  }
+  #logo {
+    /*float: left;*/
+    /*width: 50%;*/
+	border:solid pink 5px;
   }
 }
 /* @media screen and (min-width: 1200px) */
@@ -343,6 +399,7 @@ h3 {
   header, #twoway {
     margin: 0 5.555555555555555%;
   }
+  
   header .wrapper {
     width: 37.5%;
     margin-left: 25%;
@@ -352,6 +409,12 @@ h3 {
   }
   #twoway .wrapper:first-child {
     margin-left: 25%;
+  }
+  
+  #logo {
+    /*float: left;*/
+    /*width: 50%;*/
+	border:solid blue 5px;
   }
 }
 /* @media screen and (min-width: 2080px) */
