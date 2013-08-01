@@ -46,6 +46,7 @@ section {
   margin: 0;
   padding: 0;
   border: 0;
+  list-style-type:none;
 }
 /*
 *
@@ -200,8 +201,12 @@ body {
   line-height: 1.0909090909090908em;
 }
 
-section {
-	border: solid 2px blue;
+p {
+	padding: 20px 0;	
+}
+
+.clear {
+	clear:both;
 }
 
 /*
@@ -212,26 +217,30 @@ section {
 *  5.55555% | %  25  50  75  100 | 5.55555%
 *
 */
-header, #twoway {
-  margin: 0 5.555555555555555%;
+.wrapper{
+	border:solid 1px #999;	
 }
 
-.wrapper img{
-	width:100%;	
+footer {
+	clear:both;
+}
+footer li{
+	float:left;
+	padding:0 5px 5px 5px;
+}
+nav li{
+	float:left;
+	padding:0 5px 5px 5px;
 }
 
- #logo {
-    /*float: left;*/
-    /*width: 50%;*/
-	border:solid green 5px;
-  }
-    
-  header {
-	  border:solid red 2px;
-	  /*margin: 0 50%/*16.666666666666664%;*/
-	/*  margin-right:87.5%*/
-	/*  width:37.5%;*/
-  }
+#twocol .wrapper img{
+	width:100%;
+}
+
+#twocol, footer {
+	margin: 0 5.555555555555555%;
+	border: solid 1px #63C;
+}
 
 h1, h2 {
   margin: 0.9230769230769231em 0 1.3846153846153846em;
@@ -302,36 +311,21 @@ h3 {
     font-size: 1em;
   }
   
-  header {
-    margin-left:  5.5%;
-	/*margin-right: 87.5%;*/
-	width:44.455555555%;
+  #twocol .wrapper{
+	float:left;
+	width:50%;  
   }
   
- /* #twoway .wrapper {
-    float: left;
-    width: 50%;
-  }*/
-  
-   #logo {
-    /*float: left;*/
-    width: 100%;
-	/*border:solid yellow 5px;*/
-  }
-  
-  
-   #logo {
-    /*float: left;*/
-    /*width: 50%;*/
-	/*border:solid yellow 5px;*/
-  }
- 
-  	
-  header {
-	  border:solid red 2px;
-	  /*margin: 0 50%/*16.666666666666664%;*/
-	 /* margin-right:87.5%*/
+  #leftcol, #rightcol {
+	width:44%;  
+  }  
+  #leftcol {
+	margin-left:  5.5%;
 	
+  }
+  
+  #rightcol {
+	margin-left:  50%;  
   }
 }
 /* @media screen and (min-width: 888px) */
@@ -349,14 +343,8 @@ h3 {
   
     font-size: 1em;
   }
-  #twoway {
-    margin: 0 16.666666666666664%;
-  }
-  #logo {
-    /*float: left;*/
-    /*width: 50%;*/
-	border:solid pink 5px;
-  }
+ 
+  
 }
 /* @media screen and (min-width: 1200px) */
 @media screen and (min-width: 75em) {
@@ -373,8 +361,11 @@ h3 {
   
     font-size: 1em;
   }
-  header, #twoway {
-    margin: 0 27.77777777777778%;
+  
+  
+  #twocol {
+   /* margin: 0 27.77777777777778%;*/
+	 margin: 0 16.666666666666667%;
   }
 }
 /* @media screen and (min-width: 1680px) */
@@ -396,25 +387,25 @@ h3 {
 */
 /* @media screen and (min-width: 1872px) */
 @media screen and (min-width: 117em) {
-  header, #twoway {
+  /*header,*/ #twocol {
     margin: 0 5.555555555555555%;
   }
   
-  header .wrapper {
+  /*header .wrapper {
     width: 37.5%;
     margin-left: 25%;
+  }*/
+  #twocol .wrapper {
+    width: 31.25%;
   }
-  #twoway .wrapper {
-    width: 25%;
-  }
-  #twoway .wrapper:first-child {
-    margin-left: 25%;
+  #twocol .wrapper:first-child {
+    margin-left: 18.75%;
   }
   
   #logo {
     /*float: left;*/
     /*width: 50%;*/
-	border:solid blue 5px;
+	
   }
 }
 /* @media screen and (min-width: 2080px) */
