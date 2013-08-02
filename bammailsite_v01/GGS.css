@@ -48,6 +48,7 @@ section {
   border: 0;
   list-style-type:none;
 }
+
 /*
 *
 *  Consistency fixes
@@ -131,6 +132,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
 /*
 *
 *  Simple fluid media
@@ -205,8 +208,17 @@ p {
 	padding: 20px 0;	
 }
 
+p, h1,h2,h3,h4,h5,h6,a, li {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+
 .clear {
 	clear:both;
+}
+
+.center {
+ margin: 0 auto;	
 }
 
 /*
@@ -228,6 +240,11 @@ footer li{
 	float:left;
 	padding:0 5px 5px 5px;
 }
+
+nav {
+	border:solid green 2px;
+}
+
 nav li{
 	float:left;
 	padding:0 5px 5px 5px;
@@ -241,6 +258,26 @@ nav li{
 	margin: 0 5.555555555555555%;
 	border: solid 1px #63C;
 }
+
+footer .outer{
+	border:solid blue 2px;
+	width:100%;
+	
+}
+
+footer .inner{
+	/*width:200px;*/
+	border:solid brown 2px;
+	min-height:35px;
+	 margin: 0 auto;
+	 text-align:center;
+}
+
+footer li{
+	display:inline;
+	float:left;
+}
+
 
 h1, h2 {
   margin: 0.9230769230769231em 0 1.3846153846153846em;
