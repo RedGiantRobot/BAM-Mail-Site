@@ -241,6 +241,11 @@ p, h1,h2,h3,h4,h5,h6,a, li {
 	
 }
 
+.wrapper .rightcol img{
+  /*border: solid purple 2px;*/
+  margin-top: 10%;
+}
+
 .main p{
 
   padding: 20px 0;  
